@@ -1,0 +1,16 @@
+project:
+  type: website
+
+website:
+  title: "ZKA"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: about.qmd
+        text: About me
+
+format:
+  html:
+    theme: cosmo
+    toc: true

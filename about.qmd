@@ -1,5 +1,5 @@
 ---
-title: "Zheer Kejlberg Al-Mashhadi"
+title: "About me"
 about:
   template: jolla
   image: profile.jpg
@@ -10,19 +10,32 @@ about:
       href: https://github.com/zheer-kejlberg
 ---
 
-Zheer Kejlberg Al-Mashhadi is a clinician-research interested in (pharmacoe)pidemiology and endocrinology. 
+I am a physician-researcher interested in (pharmacoe)pidemiology and endocrinology. 
 
 ## Education
-
-Steno Diabetes Center Aarhus | Aarhus, DK
-Postdoc in pharmacoepidemiology of type 2 diabetes | Feb 2025 - present
-
-Aarhus University | Aarhus, DK
-PhD in pharmacoepidemiology of fractures in diabetes | May 2019 - Sep 2023
-
-Aarhus University | Aarhus, DK
-MD in medicine | Jan 2012 - Jan 2018
+  
+Aarhus University | Aarhus, DK  
+PhD in pharmacoepidemiology of fractures in diabetes | May 2019 - Sep 2023  
+  
+Aarhus University | Aarhus, DK  
+MD in medicine | Jan 2012 - Jan 2018  
 
 ## Experience
 
-...
+Steno Diabetes Center Aarhus | Aarhus, DK  
+Postdoc in pharmacoepidemiology of type 2 diabetes | Feb 2025 - present  
+
+General Practice Specialty Registrar, Year 1 | Apr 2024 - present  
+Lægehuset Marselis | Marselisborg, Aarhus, DK  
+  
+Part-time physician | Nov 2023 - Mar 2024  
+Dept. of Psychiatry | Viborg Regional Hospital | Viborg, DK  
+  
+Specialty Registrar, Year 1 | Sep 2022 - Oct 2023  
+Dept. of Endocrinology and Internal Medicine | Aarhus University Hospital | Aarhus, DK  
+  
+Foundation Doctor in Psychiatry | Nov 2018 - Apr 2019  
+Dept. of Psychiatry | Aarhus University Hospital | Aarhus, DK  
+  
+Foundation Doctor in Internal Medicine | Feb 2018 - Oct 2018  
+Dept. of Endocrinology and Internal Medicine | Aarhus University Hospital | Aarhus, DK  
