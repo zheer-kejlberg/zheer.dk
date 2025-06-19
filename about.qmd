@@ -3,14 +3,9 @@ title: "About me"
 about:
   template: jolla
   image: profile.jpg
-  links:
-    - icon: twitter-x
-      href: https://x.com/zheer_kejlberg
-    - icon: github
-      href: https://github.com/zheer-kejlberg
 ---
 
-I am a physician-researcher interested in (pharmacoe)pidemiology and endocrinology. 
+I am a physician-researcher interested in (pharmaco)epidemiology and endocrinology. 
 
 ## Education
   

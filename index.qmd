@@ -1,13 +1,14 @@
 ---
-title: "Zheer Kejlberg Al-Mashhadi"
+title: "Zheer Kejlberg Al-Mashhadi, MD, PhD"
 about:
   template: jolla
   image: profile.jpg
-  links:
-    - icon: twitter-x
-      href: https://x.com/zheer_kejlberg
-    - icon: github
-      href: https://github.com/zheer-kejlberg
+---
+Welcome to my website. It will be populated over time.
 ---
 
-Welcome to my website. It will be populated over time.
+Postdoctorate researcher @ Steno Diabetes Center Aarhus  
+  
+Interested in pharmacoepidemiology and cuasal inference  
+
+Working to improve prediction for longitudinal predictors
