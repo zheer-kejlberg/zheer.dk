@@ -2,6 +2,7 @@ devtools::install_github("zheer-kejlberg/publistR")
 library(publistR)
 ?publistR
 
+setwd("~/GitHub/zheer.dk/cv")
 publistR(
   author_names = list(
     list(family = "Al-Mashhadi", given = "Z."),
@@ -37,3 +38,4 @@ publistR(
   output_format = "all",
   bib_file = "publications.bib"
 )
+setwd("~/GitHub/zheer.dk")
