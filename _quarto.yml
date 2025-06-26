@@ -13,7 +13,7 @@ website:
       - href: about.qmd
         text: About me
       - href: cv/publications.html
-        text: CV
+        text: Publications
     right:
       - text: "{{< iconify fa6-solid at title='E-mail' width=19px >}}"
         href: mailto:contact@zheer.dk
@@ -34,5 +34,5 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: darkly
     toc: true
