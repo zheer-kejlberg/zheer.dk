@@ -10,27 +10,27 @@ publistR(
   ),
   ref_sections = list(
     list(title = "First authorships", 
-         DOIs = c("https://doi.org/10.3389/fendo.2022.882998", 
-                  "https://doi.org/10.3389/fendo.2022.861422",
-                  "https://doi.org/10.1007/s11914-020-00638-8",
-                  "https://doi.org/10.21926/obm.geriatr.2002123"
+         DOIs = c("https://doi.org/10.3389/fendo.2022.882998",# 2022 Frontiers: GLP1 vs DPP4
+                  "https://doi.org/10.3389/fendo.2022.861422", # 2022 Frotniers: SGLT2 vs GLP1
+                  "https://doi.org/10.1007/s11914-020-00638-8", # 2020 COR: GLD and fracture risk
+                  "https://doi.org/10.21926/obm.geriatr.2002123" # 2020 OBM Geriatrics
                   )),
     list(title = "Co-authorships", 
-         DOIs = c("https://doi.org/10.1016/j.jacc.2020.11.059",
-                  "https://doi.org/10.1016/j.jacc.2019.06.057",
-                  "https://doi.org/10.3390/nu16193232",
-                  "https://doi.org/10.1007/s12020-024-03789-1",
-                  "https://doi.org/10.1111/dom.15220",
-                  "https://doi.org/10.3389/fendo.2021.826997",
-                  "https://doi.org/10.3389/fendo.2021.771426",
-                  "https://doi.org/10.1007/s11914-020-00597-0"
+         DOIs = c("https://doi.org/10.1016/j.jacc.2020.11.059", # 2021 Rozh, JACC: Local pressure 
+                  "https://doi.org/10.1016/j.jacc.2019.06.057", # 2019 Rozh, JACC: 18FDG-PET in plaques
+                  "https://doi.org/10.3390/nu16193232", # 2024 Mellbye: Cafestol
+                  "https://doi.org/10.1007/s12020-024-03789-1", # 2024 JSL, Endocrine. Osteoglycine
+                  "https://doi.org/10.1111/dom.15220", # 2024 Veerle: SGLT2 vs DPP4
+                  "https://doi.org/10.3389/fendo.2021.826997", # 2022 Viggers: Alendronate vs Denosumab
+                  "https://doi.org/10.3389/fendo.2021.771426", # 2021 Viggers, Frontiers: Alendronate and T2D
+                  "https://doi.org/10.1007/s11914-020-00597-0" # 2020 Viggers, COR: Exercise and bone
                   )),
     list(title = "Conference abstracts",
-         DOIs = c("https://doi.org/10.1530/endoabs.81.OC8.2", # 2022 Endoabs (ECE): SGLT2 vs GLP1
+         DOIs = c("https://doi.org/10.1530/endoabs.81.OC8.2", # 2022 ECE: SGLT2 vs GLP1
                   "al-mashhadiFractureRiskTreatment2022" # 2022 EASD: GLP1 vs DPP4
                   )),
     list(title = "Works in progress",
-         DOIs = c("al-mashhadiSystemicGlucocorticoidUse"
+         DOIs = c("al-mashhadiSystemicGlucocorticoidUse" # Gluco-DM
                   ))
   ),
   title_italic = T,
