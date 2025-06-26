@@ -12,6 +12,8 @@ website:
         text: "ZKA"
       - href: about.qmd
         text: About me
+      - href: cv/publications.html
+        text: CV
     right:
       - text: "{{< iconify fa6-solid at title='E-mail' width=19px >}}"
         href: mailto:contact@zheer.dk
