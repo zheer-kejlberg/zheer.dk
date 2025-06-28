@@ -6,7 +6,7 @@ setwd("~/GitHub/zheer.dk/cv")
 publistR(
   prepend = c('::: {.content-visible when-format="html"}',
               "Below you can find all of my scientific publications. 
-              This document was made using the `publistR{}` <a href='https://github.com/zheer-kejlberg/publistR'>R package</a>", 
+              This document was made using the `{publistR}` <a href='https://github.com/zheer-kejlberg/publistR'>R package</a>", 
               ":::"),
   author_names = list(
     list(family = "Al-Mashhadi", given = "Z."),
