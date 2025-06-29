@@ -130,6 +130,6 @@
     "href": "about.html#r-packages",
     "title": "About me",
     "section": "R packages",
-    "text": "R packages\nI have plans to be more reproducible and open sciency. In the coming years, my code will be published as R packages where it may be useful to others.\nCurrently, I have two minor packages out:\n\n{publistR}:\nan R package to easily create a structured and formatted list of your publications (example here)\n\n{Z.gtsummary.addons}:\na couple of functions to add to the great {gtsummary} package."
+    "text": "R packages\nI have plans to be more reproducible and open sciency. In the coming years, my code will be published as R packages where it may be useful to others.\nCurrently, I have two minor packages out:\n\n\n\n{publistR}:\nan R package to easily create a structured and formatted list of your publications (example here)\n\n\n\n{Z.gtsummary.addons}:\na couple of functions to add to the great {gtsummary} package."
   }
 ]
