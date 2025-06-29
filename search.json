@@ -4,14 +4,14 @@
     "href": "about.html",
     "title": "About me",
     "section": "",
-    "text": "I am a physician-researcher interested in (pharmaco)epidemiology and endocrinology."
+    "text": "I am a physician-researcher from Denmark interested in (pharmaco)epidemiology and endocrinology."
   },
   {
     "objectID": "about.html#education",
     "href": "about.html#education",
     "title": "About me",
     "section": "Education",
-    "text": "Education\nAarhus University | Aarhus, DK\nPhD in pharmacoepidemiology of fractures in diabetes | May 2019 - Sep 2023\nAarhus University | Aarhus, DK\nMD in medicine | Jan 2012 - Jan 2018"
+    "text": "Education\nI have an MD from Aarhus University and a PhD within diabetes (pharmaco)epidemiology from Steno Diabetes Center Aarhus (SDCA) and Aarhus University."
   },
   {
     "objectID": "about.html#experience",
@@ -25,7 +25,7 @@
     "href": "index.html",
     "title": "Zheer Kejlberg Al-Mashhadi, MD, PhD",
     "section": "",
-    "text": "Welcome to my website. It will be populated over time.\n\nPostdoctorate researcher @ Steno Diabetes Center Aarhus\nInterested in pharmacoepidemiology and cuasal inference\nWorking to improve prediction for longitudinal predictors"
+    "text": "Welcome to my website. It will be populated over time.\n\nPostdoctorate researcher @ Steno Diabetes Center Aarhus\nInterested in pharmacoepidemiology, causal inference, stats and R\nWorking to improve our understanding of the various roles medication use plays in the lifecourse of type 2 diabetes"
   },
   {
     "objectID": "t.html",
@@ -103,5 +103,33 @@
     "title": "First authorships",
     "section": "",
     "text": "Below you can find all of my scientific publications. This document was made using the {publistR} R package\n\nFirst authorships\n\n\nAl-Mashhadi, Z. K., Viggers, R., Fuglsang-Nielsen, R., Vestergaard, P., Gregersen, S., & Starup-Linde, J. (2022). The risk of major osteoporotic fractures with GLP-1 receptor agonists when compared to DPP-4 inhibitors: A danish nationwide cohort study. Frontiers in Endocrinology, 13. https://doi.org/10.3389/fendo.2022.882998\n\n\nAl-Mashhadi, Z. K., Viggers, R., Starup-Linde, J., Vestergaard, P., & Gregersen, S. (2022). SGLT2 inhibitor treatment is not associated with an increased risk of osteoporotic fractures when compared to GLP-1 receptor agonists: A nationwide cohort study. Frontiers in Endocrinology, 13. https://doi.org/10.3389/fendo.2022.861422\n\n\nAl-Mashhadi, Z., Viggers, R., Fuglsang-Nielsen, R., Langdahl, B., Vestergaard, P., Gregersen, S., & Starup-Linde, J. (2020). Bone health in the elderly with type 2 diabetes mellitus–a systematic review. OBM Geriatrics, 4(2), 1–65. https://doi.org/10.21926/obm.geriatr.2002123\n\n\nAl-Mashhadi, Z., Viggers, R., Fuglsang-Nielsen, R., Vries, F. de, Bergh, J. P. van den, Harsløf, T., Langdahl, B., Gregersen, S., & Starup-Linde, J. (2020). Glucose-lowering drugs and fracture risk—a systematic review. Current Osteoporosis Reports, 18(6), 737–758. https://doi.org/10.1007/s11914-020-00638-8\n\n\n\n\nCo-authorships\n\n\nMellbye, F. D., Nguyen, M. D., Hermansen, K., Jeppesen, P. B., Al-Mashhadi, Z. K., Ringgaard, S., & Gregersen, S. (2024). Effects of 12-week supplementation with coffee diterpene cafestol in healthy subjects with increased waist circumference: A randomized, placebo-controlled trial. Nutrients, 16(19), 3232. https://doi.org/10.3390/nu16193232\n\n\nStarup-Linde, J., Westberg-Rasmussen, S., Viggers, R., Al-Mashhadi, Z. K., Handberg, A., Vestergaard, P., & Gregersen, S. (2024). Serum osteoglycin is stable during various glycemic challenges in healthy men. Endocrine, 85(3), 1117–1121. https://doi.org/10.1007/s12020-024-03789-1\n\n\nHulten, V. van, Driessen, J. H. M., Starup-Linde, J. K., Al-Mashhadi, Z. K., Viggers, R., Klungel, O. H., Souverein, P. C., Vestergaard, P., Stehouwer, C. D. A., & Bergh, J. P. van den. (2023). The associations of sodium-glucose cotransporter-2 inhibitors versus dipeptidyl peptidase-4 inhibitors as add-on to metformin with fracture risk in patients with type 2 diabetes mellitus. Diabetes, Obesity and Metabolism, 25(11), 3235–3247. https://doi.org/10.1111/dom.15220\n\n\nViggers, R., Al-Mashhadi, Z., Starup-Linde, J., & Vestergaard, P. (2022). The efficacy of alendronate versus denosumab on major osteoporotic fracture risk in elderly patients with diabetes mellitus: A danish retrospective cohort study. Frontiers in Endocrinology, 12. https://doi.org/10.3389/fendo.2021.826997\n\n\nAl-Mashhadi, R. H., Al-Mashhadi, A. L., Nasr, Z. P., Mortensen, M. B., Lewis, E. A., Camafeita, E., Ravlo, K., Al-Mashhadi, Z., Kjær, D. W., Palmfeldt, J., Bie, P., Jensen, J. M., Nørgaard, B. L., Falk, E., Vázquez, J., & Bentzon, J. F. (2021). Local pressure drives low-density lipoprotein accumulation and coronary atherosclerosis in hypertensive minipigs. Journal of the American College of Cardiology, 77(5), 575–589. https://doi.org/10.1016/j.jacc.2020.11.059\n\n\nViggers, R., Al-Mashhadi, Z., Starup-Linde, J., & Vestergaard, P. (2021). Alendronate use and risk of type 2 diabetes: A nationwide danish nested case-control study. Frontiers in Endocrinology, 12. https://doi.org/10.3389/fendo.2021.771426\n\n\nViggers, R., Al-Mashhadi, Z., Fuglsang-Nielsen, R., Gregersen, S., & Starup-Linde, J. (2020). The impact of exercise on bone health in type 2 diabetes mellitus—a systematic review. Current Osteoporosis Reports, 18(4), 357–370. https://doi.org/10.1007/s11914-020-00597-0\n\n\nAl-Mashhadi, R. H., Tolbod, L. P., Bloch, L. Ø., Bjørklund, M. M., Nasr, Z. P., Al-Mashhadi, Z., Winterdahl, M., Frøkiær, J., Falk, E., & Bentzon, J. F. (2019). 18Fluorodeoxyglucose accumulation in arterial tissues determined by PET signal analysis. Journal of the American College of Cardiology, 74(9), 1220–1232. https://doi.org/10.1016/j.jacc.2019.06.057\n\n\n\n\nConference abstracts\n\n\nAl-Mashhadi, Z. K., Viggers, R., Fuglsang-Nielsen, R., Vestergaard, P., Gregersen, S., & Starup-Linde, J. (2022). Fracture risk in treatment with GLP-1RA compared to DPP-4i: A Danish nationwide cohort study. Diabetologia, 65, suppl. 1, Abstract no. 351, S183.\n\n\nAl-Mashhadi, Z. K., Viggers, R., Starup-Linde, J., Vestergaard, P., & Gregersen, S. (2022). SGLT2 inhibitor treatment does not increase risk of osteoporotic fractures compared to GLP-1 receptor agonists: A danish population-based cohort study. Endocrine Abstracts. https://doi.org/10.1530/endoabs.81.oc8.2\n\n\n\n\nWorks in progress\n\n\nAl-Mashhadi, Z. K., Viggers, R., Starup-Linde, J., Langdahl, B. L., van Hulten, V., van den Bergh, J. P., Driessen, J., Vestergaard, P., & Gregersen, S. (n.d.). Systemic glucocorticoid use increases fracture risk equally in those with and without type 2 diabetes mellitus: A Danish nationwide cohort study [Work in Progress]."
+  },
+  {
+    "objectID": "cv.html",
+    "href": "cv.html",
+    "title": "CV",
+    "section": "",
+    "text": "Find below my full CV. It is current only available in Danish, but updated versions in Danish and English will be added soon."
+  },
+  {
+    "objectID": "about.html#clinical-work",
+    "href": "about.html#clinical-work",
+    "title": "About me",
+    "section": "Clinical work",
+    "text": "Clinical work\nMy clinical experience spans endocrinology and internal medicine, emergency medicine, general/family medicine, and psychiatry. I am currently employed as a part-time postdoc at SDCA while working 3 days a week in a general practice in Marselisborg, Aarhus, DK."
+  },
+  {
+    "objectID": "about.html#methodological-experience",
+    "href": "about.html#methodological-experience",
+    "title": "About me",
+    "section": "Methodological experience",
+    "text": "Methodological experience\nI have worked with various statistical, ML and causal inference methodologies and have a keen interest in the methodological aspect of the work. I am always happy to aid in methods discussions where I can.\nI have previously worked with linear regression type models and tests, mixed effects models, survival models (Cox, Aalen’s additive regression, Royston-Parmar / flexible parametric models), nonlinear methods (cubic splines, polynomial regression), imputation (MICE), propensity score methods (matching, IPW and SMR weighting), (causal) mediation analysis, clinical trials (vanilla, stepped-wedge), and common clustering and prediction type models.\nCurrently, I am trying to be more Bayesian by (slowly but surely) working my way through Richard McElreath’s Statistical Rethinking."
+  },
+  {
+    "objectID": "about.html#r-packages",
+    "href": "about.html#r-packages",
+    "title": "About me",
+    "section": "R packages",
+    "text": "R packages\nI am trying to be more reproducible. I have plans for implementing useful parts of my code in open-source packages (at least on GitHub).\nCurrently, I have two packages out:\n\n{publistR}: an R package to easily create a structured and formatted list of your publications (example here)\n{Z.gtsummary.addons}: an couple of functions to add to the great {gtsummary} package."
   }
 ]

@@ -5,32 +5,31 @@ about:
   image: profile.jpg
 ---
 
-I am a physician-researcher interested in (pharmaco)epidemiology and endocrinology. 
+I am a physician-researcher from Denmark interested in (pharmaco)epidemiology and endocrinology. 
 
 ## Education
   
-Aarhus University | Aarhus, DK  
-PhD in pharmacoepidemiology of fractures in diabetes | May 2019 - Sep 2023  
-  
-Aarhus University | Aarhus, DK  
-MD in medicine | Jan 2012 - Jan 2018  
+I have an MD from Aarhus University and a PhD within diabetes (pharmaco)epidemiology from Steno Diabetes Center Aarhus (SDCA) and Aarhus University.
 
-## Experience
+## Clinical work
 
-Postdoc in pharmacoepidemiology of type 2 diabetes | Feb 2025 - present  
-Steno Diabetes Center Aarhus | Aarhus, DK  
+My clinical experience spans endocrinology and internal medicine, emergency medicine, general/family medicine, and psychiatry.
+I am currently employed as a part-time postdoc at SDCA while working 3 days a week in a general practice in Marselisborg, Aarhus, DK.
 
-General Practice Specialty Registrar, Year 1 | Apr 2024 - present  
-Lægehuset Marselis | Marselisborg, Aarhus, DK  
-  
-Part-time physician | Nov 2023 - Mar 2024  
-Dept. of Psychiatry | Viborg Regional Hospital | Viborg, DK  
-  
-Specialty Registrar, Year 1 | Sep 2022 - Oct 2023  
-Dept. of Endocrinology and Internal Medicine | Aarhus University Hospital | Aarhus, DK  
-  
-Foundation Doctor in Psychiatry | Nov 2018 - Apr 2019  
-Dept. of Psychiatry | Aarhus University Hospital | Aarhus, DK  
-  
-Foundation Doctor in Internal Medicine | Feb 2018 - Oct 2018  
-Dept. of Endocrinology and Internal Medicine | Aarhus University Hospital | Aarhus, DK  
+## Methodological experience
+
+I have worked with various statistical, ML and causal inference methodologies and have a keen interest in the methodological aspect of the work. I am always happy to aid in methods discussions where I can.
+
+I have previously worked with linear regression type models and tests, mixed effects models, survival models (Cox, Aalen's additive regression, Royston-Parmar / flexible parametric models), nonlinear methods (cubic splines, polynomial regression), imputation (MICE), propensity score methods (matching, IPW and SMR weighting), (causal) mediation analysis, clinical trials (vanilla, stepped-wedge), and common clustering and prediction type models. 
+
+Currently, I am trying to be more Bayesian by (slowly but surely) working my way through Richard McElreath's <a href="https://xcelab.net/rm/">Statistical Rethinking</a>.
+
+## R packages
+
+I am trying to be more reproducible. I have plans for implementing useful parts of my code in open-source packages (at least on GitHub).
+
+Currently, I have two packages out:
+
+- <a href="https://github.com/zheer-kejlberg/publistR">{publistR}</a>: an R package to easily create a structured and formatted list of your publications (example <a href="https://zheer.dk/cv/publications.html">here</a>)
+
+- <a href="https://github.com/zheer-kejlberg/Z.gtsummary.addons">{Z.gtsummary.addons}</a>: an couple of functions to add to the great <a href="https://www.danieldsjoberg.com/gtsummary/">{gtsummary}</a> package.

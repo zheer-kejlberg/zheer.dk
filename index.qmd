@@ -4,11 +4,12 @@ about:
   template: jolla
   image: profile.jpg
 ---
+
 Welcome to my website. It will be populated over time.
 ---
 
 Postdoctorate researcher @ Steno Diabetes Center Aarhus  
   
-Interested in pharmacoepidemiology and cuasal inference  
+Interested in pharmacoepidemiology, causal inference, stats and R
 
-Working to improve prediction for longitudinal predictors
+Working to improve our understanding of the various roles medication use plays in the lifecourse of type 2 diabetes
