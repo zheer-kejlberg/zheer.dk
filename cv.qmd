@@ -4,7 +4,7 @@ about:
   template: jolla
 ---
 
-Find below my full CV. It is current only available in Danish, but updated versions in Danish and English will be added soon.
+Find below my full CV. 
 
 ```{=html}
 <object data="cv.pdf" type="application/pdf" width="100%" height="100%" style="min-height:80vh;">
