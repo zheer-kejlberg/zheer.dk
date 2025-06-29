@@ -6,30 +6,45 @@ about:
 ---
 
 I am a physician-researcher from Denmark interested in (pharmaco)epidemiology and endocrinology. 
+\
+\
 
 ## Education
   
-I have an MD from Aarhus University and a PhD within diabetes (pharmaco)epidemiology from Steno Diabetes Center Aarhus (SDCA) and Aarhus University.
+MD from Aarhus University.   
+PhD within diabetes (pharmaco)epidemiology from Steno Diabetes Center Aarhus (SDCA) and Aarhus University.
+\
+\
 
 ## Clinical work
 
+{{< iconify healthicons:doctor-male title='clinical' width=30px >}}
 My clinical experience spans endocrinology and internal medicine, emergency medicine, general/family medicine, and psychiatry.
 I am currently employed as a part-time postdoc at SDCA while working 3 days a week in a general practice in Marselisborg, Aarhus, DK.
+\
+\
 
 ## Methodological experience
 
-I have worked with various statistical, ML and causal inference methodologies and have a keen interest in the methodological aspect of the work. I am always happy to aid in methods discussions where I can.
+I have worked with various statistical and causal inference methodologies and have a keen methodological interest. I am always happy to aid in methods discussions where I can.
 
-I have previously worked with linear regression type models and tests, mixed effects models, survival models (Cox, Aalen's additive regression, Royston-Parmar / flexible parametric models), nonlinear methods (cubic splines, polynomial regression), imputation (MICE), propensity score methods (matching, IPW and SMR weighting), (causal) mediation analysis, clinical trials (vanilla, stepped-wedge), and common clustering and prediction type models. 
+{{< iconify ph:chart-scatter-light title='stats' width=30px >}}
+I have experience with most foundational statistical methods and frameworks and have worked extensively with survival and nonlinear models, missing data, propensity score-based methods, mediation, moderation, RCT design, and more.
 
 Currently, I am trying to be more Bayesian by (slowly but surely) working my way through Richard McElreath's <a href="https://xcelab.net/rm/">Statistical Rethinking</a>.
+\
+\
 
 ## R packages
 
-I am trying to be more reproducible. I have plans for implementing useful parts of my code in open-source packages (at least on GitHub).
+I have plans to be more reproducible and open sciency. In the coming years, my code will be published as R packages where it may be useful to others.
 
-Currently, I have two packages out:
+Currently, I have two minor packages out:
 
-- <a href="https://github.com/zheer-kejlberg/publistR">{publistR}</a>: an R package to easily create a structured and formatted list of your publications (example <a href="https://zheer.dk/cv/publications.html">here</a>)
+{{< iconify ph:list-bullets-thin title='publistR' width=30px >}}
+<a href="https://github.com/zheer-kejlberg/publistR">{publistR}</a>:   
+an R package to easily create a structured and formatted list of your publications (example <a href="https://zheer.dk/cv/publications.html">here</a>)
 
-- <a href="https://github.com/zheer-kejlberg/Z.gtsummary.addons">{Z.gtsummary.addons}</a>: an couple of functions to add to the great <a href="https://www.danieldsjoberg.com/gtsummary/">{gtsummary}</a> package.
+{{< iconify ph:table-thin title='Z.gtsummary.addons' width=30px >}}
+<a href="https://github.com/zheer-kejlberg/Z.gtsummary.addons">{Z.gtsummary.addons}</a>:  
+a couple of functions to add to the great <a href="https://www.danieldsjoberg.com/gtsummary/">{gtsummary}</a> package.

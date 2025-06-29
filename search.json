@@ -11,7 +11,7 @@
     "href": "about.html#education",
     "title": "About me",
     "section": "Education",
-    "text": "Education\nI have an MD from Aarhus University and a PhD within diabetes (pharmaco)epidemiology from Steno Diabetes Center Aarhus (SDCA) and Aarhus University."
+    "text": "Education\nMD from Aarhus University.\nPhD within diabetes (pharmaco)epidemiology from Steno Diabetes Center Aarhus (SDCA) and Aarhus University."
   },
   {
     "objectID": "about.html#experience",
@@ -116,20 +116,20 @@
     "href": "about.html#clinical-work",
     "title": "About me",
     "section": "Clinical work",
-    "text": "Clinical work\nMy clinical experience spans endocrinology and internal medicine, emergency medicine, general/family medicine, and psychiatry. I am currently employed as a part-time postdoc at SDCA while working 3 days a week in a general practice in Marselisborg, Aarhus, DK."
+    "text": "Clinical work\n\nMy clinical experience spans endocrinology and internal medicine, emergency medicine, general/family medicine, and psychiatry. I am currently employed as a part-time postdoc at SDCA while working 3 days a week in a general practice in Marselisborg, Aarhus, DK."
   },
   {
     "objectID": "about.html#methodological-experience",
     "href": "about.html#methodological-experience",
     "title": "About me",
     "section": "Methodological experience",
-    "text": "Methodological experience\nI have worked with various statistical, ML and causal inference methodologies and have a keen interest in the methodological aspect of the work. I am always happy to aid in methods discussions where I can.\nI have previously worked with linear regression type models and tests, mixed effects models, survival models (Cox, Aalen’s additive regression, Royston-Parmar / flexible parametric models), nonlinear methods (cubic splines, polynomial regression), imputation (MICE), propensity score methods (matching, IPW and SMR weighting), (causal) mediation analysis, clinical trials (vanilla, stepped-wedge), and common clustering and prediction type models.\nCurrently, I am trying to be more Bayesian by (slowly but surely) working my way through Richard McElreath’s Statistical Rethinking."
+    "text": "Methodological experience\nI have worked with various statistical and causal inference methodologies and have a keen methodological interest. I am always happy to aid in methods discussions where I can.\n\nI have experience with most foundational statistical methods and frameworks and have worked extensively with survival and nonlinear models, missing data, propensity score-based methods, mediation, moderation, RCT design, and more.\nCurrently, I am trying to be more Bayesian by (slowly but surely) working my way through Richard McElreath’s Statistical Rethinking."
   },
   {
     "objectID": "about.html#r-packages",
     "href": "about.html#r-packages",
     "title": "About me",
     "section": "R packages",
-    "text": "R packages\nI am trying to be more reproducible. I have plans for implementing useful parts of my code in open-source packages (at least on GitHub).\nCurrently, I have two packages out:\n\n{publistR}: an R package to easily create a structured and formatted list of your publications (example here)\n{Z.gtsummary.addons}: an couple of functions to add to the great {gtsummary} package."
+    "text": "R packages\nI have plans to be more reproducible and open sciency. In the coming years, my code will be published as R packages where it may be useful to others.\nCurrently, I have two minor packages out:\n\n{publistR}:\nan R package to easily create a structured and formatted list of your publications (example here)\n\n{Z.gtsummary.addons}:\na couple of functions to add to the great {gtsummary} package."
   }
 ]
