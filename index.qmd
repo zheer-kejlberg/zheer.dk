@@ -2,10 +2,16 @@
 title: "Zheer Kejlberg Al-Mashhadi, MD, PhD"
 about:
   template: jolla
-  image: profile.jpg
+  image: img/profile.jpg
 ---
-
-
+<span style="font-size: smaller;">Pronunciation (US English): /ʒɪər/</span>  
+<span style="font-size: x-small;">*like 'beer' but starting with the Ezh (⟨zh⟩, /ʒ/) sound found in, for instance, 'measure'</span>
+```{=html}
+<audio controls>
+  <source src="audio/zheer.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+```
 ---
 
 Postdoctorate researcher @ Steno Diabetes Center Aarhus  

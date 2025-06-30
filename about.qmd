@@ -2,7 +2,7 @@
 title: "About me"
 about:
   template: jolla
-  image: profile.jpg
+  image: img/profile.jpg
 ---
 
 I am a physician-researcher from Denmark interested in (pharmaco)epidemiology and endocrinology. 
