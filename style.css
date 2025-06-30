@@ -1,0 +1,17 @@
+div.quarto-about-jolla div.about-links .about-link {
+  border:none;
+}
+          
+#hide-nav-item {
+  display:none;
+}
+
+
+
+/* Show text labels when navbar collapses (vertical layout) */
+@media (max-width: 991.98px) { /* Bootstrap 'lg' breakpoint */
+  #hide-nav-item {
+    display: inline;
+    
+  }
+}

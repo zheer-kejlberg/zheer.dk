@@ -3,6 +3,15 @@ title: "Zheer Kejlberg Al-Mashhadi, MD, PhD"
 about:
   template: jolla
   image: img/profile.jpg
+  links:
+    - text: "{{< iconify fa6-brands linkedin title='LinkedIn' width=19px >}}"
+      href: https://www.linkedin.com/in/zheer-kejlberg/
+    - text: "{{< iconify fa6-brands square-bluesky title='Bluesky' width=19px >}}"
+      href: https://bsky.app/profile/zheer.bsky.social
+    - text: "{{< iconify fa6-brands mastodon title='Mastodon' width=19px >}}"
+      href: https://mathstodon.xyz/@zheer_kejlberg
+    - text: "{{< iconify fa6-brands square-twitter title='Twitter' width=19px >}}"
+      href: https://x.com/zheer_kejlberg
 ---
 <span style="font-size: 85%;">Pronunciation*: /ʒɪər/</span>  
 <span style="font-size: 70%;">Like 'dear' but starting with the ⟨zh⟩ sound found in, for instance, 'measure'.</span>
