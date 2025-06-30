@@ -32,23 +32,3 @@ I have worked with various statistical and causal inference methodologies and ha
 I have experience with most foundational statistical methods and frameworks and have worked extensively with survival and nonlinear models, missing data, propensity score-based methods, mediation, moderation, RCT design, and more.
 
 Currently, I am trying to be more Bayesian by (slowly but surely) working my way through Richard McElreath's <a href="https://xcelab.net/rm/">Statistical Rethinking</a>.
-\
-\
-
-## R packages
-
-I have plans to be more reproducible and open sciency. In the coming years, my code will be published as R packages where it may be useful to others.
-
-Currently, I have two minor packages out:
-\
-\
-
-{{< iconify ph:list-bullets-thin title='publistR' width=30px >}}
-<a href="https://github.com/zheer-kejlberg/publistR">{publistR}</a>:   
-an R package to easily create a structured and formatted list of your publications (example <a href="https://zheer.dk/cv/publications.html">here</a>)
-\
-\
-
-{{< iconify ph:table-thin title='Z.gtsummary.addons' width=30px >}}
-<a href="https://github.com/zheer-kejlberg/Z.gtsummary.addons">{Z.gtsummary.addons}</a>:  
-a couple of functions to add to the great <a href="https://www.danieldsjoberg.com/gtsummary/">{gtsummary}</a> package.
