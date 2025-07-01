@@ -34,6 +34,8 @@ website:
 
 format:
   html:
-    theme: darkly
+    theme: 
+      light: flatly
+      dark: darkly
     toc: true
     css: style.css
