@@ -97,14 +97,21 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About me</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> 
-<span class="menu-text">CV</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-curriculum-vitae" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Curriculum vitae</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-curriculum-vitae">    
+        <li>
+    <a class="dropdown-item" href="./cv/cv.html">
+ <span class="dropdown-text">CV</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./cv/publications.html"> 
-<span class="menu-text">Publications</span></a>
+        <li>
+    <a class="dropdown-item" href="./cv/publications.html">
+ <span class="dropdown-text">Publications</span></a>
   </li>  
+    </ul>
+  </li>
   <li class="nav-item">
     <a class="nav-link active" href="./R-packages.html" aria-current="page"> 
 <span class="menu-text">R packages</span></a>

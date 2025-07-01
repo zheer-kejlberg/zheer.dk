@@ -12,10 +12,12 @@ website:
         text: "ZKA"
       - href: about.qmd
         text: About me
-      - href: cv.html
-        text: CV
-      - href: cv/publications.html
-        text: Publications
+      - text: Curriculum vitae
+        menu:
+          - href: cv/cv.html
+            text: CV
+          - href: cv/publications.html
+            text: Publications
       - href: R-packages.html
         text: R packages
       - href: pipeline.html
