@@ -2,6 +2,194 @@
 title: "Pipeline"
 about:
   template: jolla
+css: css/pipeline.css
 ---
 
 On this page, I will list all of my current projects along with some I have in my pipeline. If any of these have your interest, you're more than welcome to reach out with questions or even ideas for collaborations.
+
+```{r}
+#| include: false
+#| 
+library(tidyverse)
+library(flextable)
+
+get_col <- function(vector, num) {
+  return(vector[num])
+}
+```
+\  
+\  
+
+### Collaborative projects
+\
+<!-- Create table -->
+```{r}
+#| echo: false
+
+toggler <- function(num) {
+  paste0('<span title="Toggle more info" class="row-toggle" onclick="toggleRow(this)">',
+         as.character(num),
+         '<span class="iconify" data-icon="lsicon:amount-down-outline"></span></span>')
+}
+toggles <- function(short, long) {
+  paste0(
+    '<span class="toggle-text"><span class="short-text">',
+    short,
+    '</span><span class="long-text" style="display:none;">',
+    long,'</span></span>'
+  )
+}
+
+collab <- tibble::tribble(
+  ~"#",~"Title", ~"Source", ~"Role", ~"Collaborators", ~"Design", ~"Exposure", ~"Outcome", ~"Population",
+  ###
+  toggler(1),
+  toggles(short = '<a href="https://www.headwise.dk">HEADWISE</a>', long = '<a href="https://www.headwise.dk">HEADWISE</a>: Head trauma Evaluation Algorithm for Deploying Warranted Imaging Safely and Efficiently'),
+  toggles(short = '<a href="https://www.en.auh.dk/departments/department-of-radiology/">Radiology, AUH</a>', long = '<a href="https://www.en.auh.dk/departments/department-of-radiology/">Dept. of Radiology</a>, Aarhus University Hospital'),
+  "Quantitative methodologist", 
+  toggles(short = '<a href="https://vaelgklogt.dk/">Vælg Klogt</a>, HEADWISE Consortium', long = '<a href="https://vaelgklogt.dk/">Vælg Klogt (Choosing Wisely)</a>, HEADWISE Consortium'),
+  toggles(short = '<a href="https://trialsjournal.biomedcentral.com/articles/10.1186/s13063-017-1783-0">SW-cRCT</a>', long = '<a href="https://trialsjournal.biomedcentral.com/articles/10.1186/s13063-017-1783-0">Stepped-wedge cluster-randomised controlled trial</a>'),
+  toggles(short = 'Cerebral CT algorithms', long = "Vælg Klogt cerebral CT-scan algorithm vs. current national guidelines"), 
+  "Neurological outcomes", 
+  "Mild head trauma",
+  ###
+  toggler(2),
+  '<a href="https://clinicaltrials.gov/study/NCT06668090">Metcercise</a>', 
+  toggles(short = '<a href="https://steno-aarhus.github.io/">SDCA</a>', long = '<a href="https://steno-aarhus.github.io/">Steno Diabetes Center Aarhus</a>, Aarhus University Hospital'),
+  'Co-investigator', 
+  toggles(short = '<a href="https://www.en.auh.dk/departments/department-of-endocrinology-and-internal-medicine/">Endocrinology</a>, AUH & <a href="https://stenodiabetescenter.rn.dk/Service/English">SDCN</a>', long = '<a href="https://www.en.auh.dk/departments/department-of-endocrinology-and-internal-medicine/">Dept. of Endocrinology and Internal Medicine</a>, \nAarhus University Hospital &\n<a href="https://stenodiabetescenter.rn.dk/Service/English">Steno Diabetes Center North Denmark</a>'),
+  "Randomised controlled trial", 
+  "12-week exercise intervention", 
+  "Bone turnover", 
+  "Type 2 diabetes",
+  ###
+  toggler(3), 
+  "Constitutional chromosomal abnormalities and adverse outcomes of COVID-19", 
+  toggles(short = '<a href="https://kea.au.dk/">DCE</a>, AUH', long = '<a href="https://kea.au.dk/">Dept. of Clinical Epidemiology</a>,\nAarhus University Hospital'), 
+  "Co-investigator", 
+  toggles(short = '<a href="https://www.en.auh.dk/departments/department-of-clinical-genetics/">DCG</a> & <a href="https://www.en.auh.dk/departments/department-of-endocrinology-and-internal-medicine/">Endocrinology</a>, AUH', long = '<a href="https://www.en.auh.dk/departments/department-of-clinical-genetics/">Dept. of Clinical Genetics</a> &\n<a href="https://www.en.auh.dk/departments/department-of-endocrinology-and-internal-medicine/">Dept. of Endocrinology and Internal Medicine</a>, \nAarhus University Hospital'),
+  "Nationwide cohort study", 
+  "", 
+  "Morbidity and mortality", 
+  "Trisomy-21 and sex-chromosome abnormalities",
+  ###
+  toggler(4),
+  '<a href="https://dp-next.github.io/">DP-NEXT</a>',
+  '<a href="https://steno.dk/">All Steno Diabetes Centers</a>',
+  "Co-investigator",
+  "",
+  toggles(short = "Multi-project", long = 'Multi-project:\nI\'ll be contributing to <a href="https://dp-next.github.io/wp2.html">Work Package 2</a>; diabetes prediction for the future'),
+  "",
+  "",
+  ""
+) 
+```
+
+<!-- Print table -->
+```{r}
+#| echo: false
+#| 
+library(DT)
+collab_dt <- datatable(collab, 
+                       escape = FALSE, 
+                       options = list(dom = 'tr', scrollX = TRUE), 
+                       caption = htmltools::tags$caption(
+                         style = 'caption-side: bottom; text-align: left; font-size: 0.9em;',
+                         'Scroll horizontally to see more columns'
+                       ),
+                       rownames=F) %>%
+  htmlwidgets::onRender("
+    function(el) {
+      window.toggleRow = function(toggleIcon) {
+        const row = toggleIcon.closest('tr');
+        const toggles = row.querySelectorAll('.toggle-text');
+        const icon = toggleIcon.querySelector('.iconify');
+        let isCollapsed = true;
+
+        // Determine current state
+        if (toggles.length > 0) {
+          const first = toggles[0];
+          isCollapsed = first.querySelector('.short-text').style.display !== 'none';
+        }
+
+        // Toggle all .toggle-text elements in this row
+        toggles.forEach(cell => {
+          const short = cell.querySelector('.short-text');
+          const long = cell.querySelector('.long-text');
+          short.style.display = isCollapsed ? 'none' : '';
+          long.style.display = isCollapsed ? '' : 'none';
+        });
+
+        // Change icon
+        icon.setAttribute('data-icon', isCollapsed ? 'lsicon:amount-up-outline' : 'lsicon:amount-down-outline');
+      }
+    }
+  ")  %>%
+  htmlwidgets::prependContent(
+    # Load Iconify script explicitly
+    htmltools::tags$script(src = "https://code.iconify.design/2/2.2.1/iconify.min.js")
+  )
+```
+
+::: {.scrollable-table}
+```{r}
+#| echo: false
+collab_dt
+```
+:::
+
+<!-- test af extra tabeller
+::: {.scrollable-table}
+```{r}
+#| echo: false
+datatable(collab, 
+          escape = FALSE, 
+          options = list(dom = 'tr', scrollX = TRUE), 
+          caption = htmltools::tags$caption(
+            style = 'caption-side: bottom; text-align: left; font-size: 0.9em;',
+            'Scroll horizontally to see more columns'
+          ),
+          rownames=F)
+```
+:::
+--> 
+
+
+<!--
+## Lists of studies {.scrollable}
+```{r}
+#| include: false
+
+studies <- tibble::tribble(
+  ~"#",~"Title", ~"Priority", ~"Co-authors", ~"Active", ~"Inferential category", ~"Study design", ~"Population", ~"Exposure", ~"Outcome", ~"Statistical analysis",
+  #c("Title", "Priority", "Co-authors", "Active", "Inferential category", "Study design", "Popoulation", "Exposure", "Outcome", "Statistical analysis"),
+  "1","Medication trajectories in Denmark in individuals with \nprediabetes and type 2 diabetes mellitus compared to \nthe background population between 2000 and 20xx", "High", "Daniel Witte, Henrik Støvring", "Inactive", "Descriptive", "Cohort", "All individuals alive after Jan 1st 2000", "Subgroups: \nDiabetes (), \npre-diabetes (≥1 HbA1c ≥ 42, \nand non-DM", "Changes in medication", "Simple summary statistics, plotting",
+  "2","A comparison of different ways to characterise lifetime \nmedication use for the optimal prediction of changes in \nHbA1c and clinical outcomes in type 2 diabetes mellitus", "Medium", "Daniel Witte, Henrik Støvring, \nAdam Hulman, Anders Isaksen", "Inactive", "Prediction", "Cohort", "All individuals alive after Jan 1st 2000", "Subgroups: \nDiabetes (), \npre-diabetes (≥1 HbA1c ≥ 42, \nand non-DM", "1) Changes in HbA1c, \n2) Death (5-year and 10-year mortality), \n3) Cardiovascular outcome, \n4) Causes of death", "1) Cumulative mortality rates \n(Logistic regression, (zero-inflated) Poisson, \n(zero-inflated) negative Binomial, \nAalen's additive regression, Cox proportional hazards regression), \n2) time-to-event (Cox proportional hazards, \naccelerated failure time model), \n3) frailty model / repeated measures model, \n4) superlearner",
+  "3","The effect of metformin initiation on long-term \nmultimorbidity outcomes", "Low", "Daniel Witte, Jie Zhang", "Inactive", "Descriptive + cuasal", "Cohort", "Individuals with type 2 diabetes mellitus \nalive after Jan 1st 2000", "Metformin intiation as a first-line medication \n(vs. non-initiation)", "1) Full multimorbidity trajectories summarized as \nmean and median multimorbidity values at each timepoint (+ variance), \nmean time to each increase, \n2) changes in medication trajectories at major multimorbidity time points", "Clone-censor-weighting to account for immortal time, \ninverse probability of treatment weighting with \nstandardized morbidity ratio weights (for the ATT), \nsimple summary measures for the outcome",
+  "4","The interplay between choice of second-line medication \nin type 2 diabetes mellitus and multimorbidity", "Low", "Daniel Witte, Jie Zhang", "Inactive", "Descriptive + cuasal", "Cohort", "Individuals with type 2 diabetes mellitus \nalive after Jan 1st 2000", "Initiation of SGLT-2 inhibitors, \nGLP1 receptor agonists, \nDPP-IV inhibitors and \nsulfonylureas as add-on treatments to metformin", "1) Full multimorbidity trajectories summarized as \nmean and median multimorbidity values at each timepoint (+ variance), \nmean time to each increase, \n2) changes in medication trajectories at major multimorbidity time points", "Inverse probability of treatment weighting (for the PATE), \nsimple summary measures for the outcome"
+)
+
+studies <- studies %>% 
+  flextable() %>%
+  autofit() %>%
+  width(j = 1, width = 0.5) %>%
+  width(j = 2, width = 5) %>%
+  width(j = 3, width = 1) %>%
+  width(j = 4, width = 4) %>%
+  width(j = 5, width = 2) %>%
+  set_table_properties(width = 0.5, layout = "fixed") #%>%
+  #add_footer_lines("* denotes ") %>%
+  #add_footer_lines("** denotes ")
+
+
+```
+
+```{r}
+#| label: tbl-studies
+#| tbl-cap: List of studies
+#| echo: false
+#| output: true
+
+#studies
+```
+-->

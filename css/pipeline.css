@@ -1,0 +1,38 @@
+.hscroll {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.toggle-text .short-text,
+.toggle-text .long-text {
+  #font-size: 14px;
+}
+
+.row-toggle {
+  cursor: pointer;
+  #font-size: 1rem;
+  color: #888;
+  margin-left: 6px;
+  vertical-align: middle;
+  user-select: none;
+}
+
+.row-toggle:hover {
+  color: #000;
+}
+
+div.datatables {
+  #font-size: 0.7vw;
+  font-size: min(max(1vw,10px),14px)
+}
+
+.scrollable-table {
+  overflow-x: auto; 
+  width: min(800px,70vw);
+}
+
+@media (max-width: 767.98px) {
+    .scrollable-table {
+      min-width:88vw;
+    }
+}

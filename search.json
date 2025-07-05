@@ -53,7 +53,7 @@
     "href": "pipeline.html",
     "title": "Pipeline",
     "section": "",
-    "text": "On this page, I will list all of my current projects along with some I have in my pipeline. If any of these have your interest, you’re more than welcome to reach out with questions or even ideas for collaborations."
+    "text": "On this page, I will list all of my current projects along with some I have in my pipeline. If any of these have your interest, you’re more than welcome to reach out with questions or even ideas for collaborations.\n   \n\nCollaborative projects"
   },
   {
     "objectID": "R-packages.html",
@@ -61,5 +61,12 @@
     "title": "R packages",
     "section": "",
     "text": "I have plans to be more reproducible and open sciency. In the coming years, my code will be published as R packages where it may be useful to others.\nCurrently, I have two minor packages out:\n\n\n\n{publistR}:\nan R package to easily create a structured and formatted list of your publications (example here)\n\n\n\n{Z.gtsummary.addons}:\na couple of functions to add to the great {gtsummary} package."
+  },
+  {
+    "objectID": "pipeline.html#lists-of-studies",
+    "href": "pipeline.html#lists-of-studies",
+    "title": "Pipeline",
+    "section": "Lists of studies",
+    "text": "Lists of studies\n\n\n\nTable 1: List of studies"
   }
 ]
