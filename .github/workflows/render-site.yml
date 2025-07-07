@@ -57,7 +57,7 @@ jobs:
       - name: Set up dependencies
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
-          extra-packages: devtools, quarto, rmarkdown, knitr, tibble, stringr, rcrossref, htmltools, htmlwidgets, DT, tinytex
+          extra-packages: devtools, quarto, rmarkdown, knitr, tibble, stringr, rcrossref, htmltools, htmlwidgets, DT, tinytex, zheer-kejlberg/publistR
           dependencies: false
           cache-version: 1
           
@@ -65,7 +65,6 @@ jobs:
         env:
           GITHUB_PAT: ${{ secrets.RENDER_WORKFLOW_PAT }}
         run: |
-          Rscript -e 'if (!requireNamespace("publistR", quietly = TRUE)) devtools::install_github("zheer-kejlberg/publistR")'
           if [ ! -d ~/.TinyTeX ]; then
             Rscript -e 'tinytex::install_tinytex()'
           fi
