@@ -58,8 +58,6 @@ jobs:
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
           extra-packages: devtools, quarto, rmarkdown, knitr, tibble, stringr, rcrossref, htmltools, htmlwidgets, DT, tinytex
-          dependencies: false
-          cache-version: 1
           
       - name: Install R packages
         env:
