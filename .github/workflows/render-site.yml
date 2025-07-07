@@ -17,14 +17,6 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          
-      - name: Set up R
-        uses: r-lib/actions/setup-r@v2
-
-      - name: Set up Quarto
-        uses: quarto-dev/quarto-actions/setup@v2
-        with:
-          version: "pre-release"  # or a specific version like "1.4.550"
 
       - name: Cache R packages
         uses: actions/cache@v4
@@ -38,6 +30,33 @@ jobs:
         with:
           path: ~/.TinyTeX
           key: ${{ runner.os }}-tinytex-v1
+          
+      - name: Set up R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          use-public-rspm: true  # enables fast prebuilt binaries from RSPM
+
+      - name: Set up dependencies # installs pak etc using RSPM cache (very fast)
+        uses: r-lib/actions/setup-r-dependencies@v2
+        with:
+          extra-packages: |
+            pak
+            devtools
+            quarto
+            rmarkdown
+            knitr
+            tibble
+            stringr
+            rcrossref
+            htmltools
+            htmlwidgets
+            DT
+            tinytex
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+        with:
+          version: "pre-release"  # or a specific version like "1.4.550"
 
       - name: Install system dependencies (libcurl, etc.)
         run: |
@@ -58,8 +77,6 @@ jobs:
         env:
           GITHUB_PAT: ${{ secrets.RENDER_WORKFLOW_PAT }}
         run: |
-          Rscript -e 'install.packages("pak", repos = "https://cran.rstudio.com")'
-          Rscript -e 'pak::pkg_install(c("devtools", "quarto", "rmarkdown", "knitr", "tibble", "stringr", "rcrossref", "htmltools", "htmlwidgets", "DT","tinytex"))'
           Rscript -e 'if (!requireNamespace("publistR", quietly = TRUE)) devtools::install_github("zheer-kejlberg/publistR")'
           if [ ! -d ~/.TinyTeX ]; then
             Rscript -e 'tinytex::install_tinytex()'
