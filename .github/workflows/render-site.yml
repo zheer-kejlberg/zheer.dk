@@ -51,7 +51,7 @@ jobs:
             libfribidi-dev \
             libfreetype6-dev \
             libpng-dev \
-            libtiff5-dev \ 
+            libtiff5-dev \
             libjpeg-dev
           
       - name: Install R packages
