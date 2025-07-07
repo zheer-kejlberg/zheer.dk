@@ -2,17 +2,19 @@
 title: "About me"
 about:
   template: jolla
-  image: img/profile.jpg
+  image: img/wedding.jpeg
 ---
 
-I am a physician-researcher from Denmark interested in (pharmaco)epidemiology and endocrinology. 
+I am a physician-researcher from Denmark with an interest in (pharmaco)epidemiology and endocrinology.  
+\
+I live in Aarhus with my wife, <a href="https://pure.au.dk/portal/en/persons/sofiekejlberg%40clin.au.dk">Sofie</a>, and our 1-year old son.
 \
 \
 
 ## Education
   
 MD from Aarhus University.   
-PhD within diabetes (pharmaco)epidemiology from Steno Diabetes Center Aarhus (SDCA) and Aarhus University.
+PhD within diabetes pharmacoepidemiology from Steno Diabetes Center Aarhus (SDCA) and Aarhus University.
 \
 \
 
