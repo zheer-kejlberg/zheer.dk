@@ -23,7 +23,7 @@
 
 div.datatables {
   #font-size: 0.7vw;
-  font-size: min(max(1vw,10px),14px)
+  font-size: min(max(1vw,10px),14px);
   color: inherit;
 }
 
