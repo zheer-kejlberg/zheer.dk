@@ -139,10 +139,12 @@ collab_dt
 ```
 :::
 
-<!-- test af extra tabeller
+
+<!-- test af extra tabeller --> 
 ::: {.scrollable-table}
 ```{r}
-#| echo: false
+#| eval: false
+#| include: false
 datatable(collab, 
           escape = FALSE, 
           options = list(dom = 'tr', scrollX = TRUE), 
@@ -153,12 +155,13 @@ datatable(collab,
           rownames=F)
 ```
 :::
---> 
 
 
-<!--
+
+
 ## Lists of studies {.scrollable}
 ```{r}
+#| eval: false
 #| include: false
 
 studies <- tibble::tribble(
@@ -170,17 +173,17 @@ studies <- tibble::tribble(
   "4","The interplay between choice of second-line medication \nin type 2 diabetes mellitus and multimorbidity", "Low", "Daniel Witte, Jie Zhang", "Inactive", "Descriptive + cuasal", "Cohort", "Individuals with type 2 diabetes mellitus \nalive after Jan 1st 2000", "Initiation of SGLT-2 inhibitors, \nGLP1 receptor agonists, \nDPP-IV inhibitors and \nsulfonylureas as add-on treatments to metformin", "1) Full multimorbidity trajectories summarized as \nmean and median multimorbidity values at each timepoint (+ variance), \nmean time to each increase, \n2) changes in medication trajectories at major multimorbidity time points", "Inverse probability of treatment weighting (for the PATE), \nsimple summary measures for the outcome"
 )
 
-studies <- studies %>% 
-  flextable() %>%
-  autofit() %>%
-  width(j = 1, width = 0.5) %>%
-  width(j = 2, width = 5) %>%
-  width(j = 3, width = 1) %>%
-  width(j = 4, width = 4) %>%
-  width(j = 5, width = 2) %>%
-  set_table_properties(width = 0.5, layout = "fixed") #%>%
-  #add_footer_lines("* denotes ") %>%
-  #add_footer_lines("** denotes ")
+#studies <- studies %>% 
+#  flextable() %>%
+#  autofit() %>%
+#  width(j = 1, width = 0.5) %>%
+#  width(j = 2, width = 5) %>%
+#  width(j = 3, width = 1) %>%
+#  width(j = 4, width = 4) %>%
+#  width(j = 5, width = 2) %>%
+#  set_table_properties(width = 0.5, layout = "fixed") #%>%
+#  #add_footer_lines("* denotes ") %>%
+#  #add_footer_lines("** denotes ")
 
 
 ```
@@ -188,9 +191,9 @@ studies <- studies %>%
 ```{r}
 #| label: tbl-studies
 #| tbl-cap: List of studies
-#| echo: false
-#| output: true
+#| eval: false
+#| include: false
 
 #studies
 ```
--->
+
