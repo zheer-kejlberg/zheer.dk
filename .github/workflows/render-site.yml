@@ -58,7 +58,8 @@ jobs:
         env:
           GITHUB_PAT: ${{ secrets.RENDER_WORKFLOW_PAT }}
         run: |
-          Rscript -e 'install.packages(c("devtools", "quarto", "rmarkdown", "knitr", "tibble", "stringr", "rcrossref", "htmltools", "htmlwidgets", "DT","tinytex"))'
+          Rscript -e 'install.packages("pak", repos = "https://cran.rstudio.com")'
+          Rscript -e 'pak::pkg_install(c("devtools", "quarto", "rmarkdown", "knitr", "tibble", "stringr", "rcrossref", "htmltools", "htmlwidgets", "DT","tinytex"))'
           Rscript -e 'if (!requireNamespace("publistR", quietly = TRUE)) devtools::install_github("zheer-kejlberg/publistR")'
           if [ ! -d ~/.TinyTeX ]; then
             Rscript -e 'tinytex::install_tinytex()'
