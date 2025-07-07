@@ -10,12 +10,12 @@ On this page, I will list all of my current projects along with some I have in m
 ```{r}
 #| include: false
 #| 
-library(tidyverse)
-library(flextable)
+#library(tidyverse)
+#library(flextable)
 
-get_col <- function(vector, num) {
-  return(vector[num])
-}
+#get_col <- function(vector, num) {
+#  return(vector[num])
+#}
 ```
 \  
 \  
@@ -40,6 +40,7 @@ toggles <- function(short, long) {
   )
 }
 
+library(tibble)
 collab <- tibble::tribble(
   ~"#",~"Title", ~"Source", ~"Role", ~"Collaborators", ~"Design", ~"Exposure", ~"Outcome", ~"Population",
   ###

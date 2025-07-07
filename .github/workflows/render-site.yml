@@ -23,7 +23,7 @@ jobs:
 
       - name: Install R packages
         run: |
-          Rscript -e 'install.packages(c("devtools", "quarto", "rmarkdown", "knitr", "dplyr", "tinytex"))'
+          Rscript -e 'install.packages(c("devtools", "quarto", "rmarkdown", "knitr", "tibble", "stringr", "rcrossref", "htmltools", "htmlwidgets", "DT","tinytex"))'
           Rscript -e 'devtools::install_github("zheer-kejlberg/publistR")'
           Rscript -e 'tinytex::install_tinytex()'
 
