@@ -59,6 +59,8 @@ jobs:
         with:
           extra-packages: devtools, quarto, rmarkdown, knitr, tibble, stringr, rcrossref, htmltools, htmlwidgets, DT, tinytex, zheer-kejlberg/publistR
           cache-version: 1
+        env:
+          GITHUB_PAT: ${{ secrets.RENDER_WORKFLOW_PAT }}
           
       - name: Install R packages
         env:
