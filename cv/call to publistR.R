@@ -1,6 +1,6 @@
-devtools::install_github("zheer-kejlberg/publistR")
+#devtools::install_github("zheer-kejlberg/publistR")
 library(publistR)
-?publistR
+#?publistR
 
 setwd("~/GitHub/zheer.dk/cv")
 publistR(
