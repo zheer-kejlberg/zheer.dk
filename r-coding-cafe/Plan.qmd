@@ -1,0 +1,258 @@
+---
+title: "R Coding Café - Plan"
+author: "Zheer Kejlberg Al-Mashhadi"
+format: html
+editor: source
+---
+
+```{r}
+library(dplyr)
+library(data.table)
+
+n <- 1000
+data <- tibble(
+  x = sample(c("Treatment A", "Treatment B"), size = n, replace =T),
+  sex = rbinom(n, 1, 0.5) |> factor(labels = c("Male", "Female")) |> factor(levels = c("Male", "Female")),
+  age = runif(n, 15,87) |> round(),
+  height = rnorm(n, 183 - as.numeric(sex)*5, 10),
+  weight = (rnorm(n,24,2)+age/45+1.5*as.numeric(sex)) * (height/100)^2,
+  bmi = weight/(height/100)^2
+)
+```
+
+## Plan for R coding café
+
+-   Bi-weekly
+-   1.5 hours
+-   10-15 min presentation
+
+## Subjects for presentation
+
+### The minimal reproducible example - and simulation basics
+
+1)  What to include
+
+-   Minimal code
+-   Minimal data
+-   Previous attempts
+
+2)  What not to include
+3)  Simulating the data
+
+-   Sampling from a distribution - random deviates in R
+-   Sampling from a set
+
+### Data structures
+
+Variable classes
+
+Singular: - Numeric: float (double) v. integer - Character - Factor
+
+Multiple: - Vectors v. lists - Matrices - Tables, data.frames, tibbles v. data.table
+
+Objects
+
+### Debugging and sanity checks
+
+Printing
+
+Try
+
+Debugger moder
+
+Evaluating output line by line
+
+Summary functions
+
+```{r}
+#| eval: false
+
+is.na(data$age) # The NA cemetery: where half the victims of data management errors go to rest
+
+# General summary functions
+summary(data$age)
+table(data$age) # Only for categorical variables
+Hmisc::describe(data$age)
+
+# dplyr::summarise()
+library(dplyr)
+data |> group_by(PNR) |> summarise(n()) # also useful with custom functions
+
+# Make a "Table 1" for thorough stratified overviews
+gtsummary::tbl_summary(data, by = sex, include = c(x, age, sex, height, weight, bmi))
+
+```
+
+### Functions
+
+```{r}
+#| eval: false
+
+myFunction <- function(input) {
+  output <- input + ...
+  return(output)
+}
+
+
+```
+
+### Iteration, paralellisation (and recursion?)
+
+For and while loops
+
+```{r}
+for (i in 1:10) {
+  print(i)
+}
+# Finite length vector
+
+i <- 2
+while (i < 20) {
+  i <- i^2
+  print(i)
+}
+# BEWARE, here be infinity
+
+```
+
+Functional programming
+
+```{r}
+# apply(), sapply(), lapply(), ...
+# purrr::map()
+```
+
+Parallel compute
+
+```{r}
+#| eval: false
+
+# purrr::in_parallel() [mirai]
+
+# doParallel:
+library(doParallel)
+cl <- makeCluster(2)
+registerDoParallel(cl)
+foreach(x = 1:10) %dopar% { x^2 }
+stopCluster(cl)
+closeAllConnections()
+```
+
+### Paradigms: Base R, data.table, and Tidyverse (dplyr)
+
+Base R
+
+```{r}
+#| eval: false
+
+# Explicit indexing, standard evaluation, (note logical vectors), wysiwyg
+df[df$age >= 18, ]
+
+df$bmi <- df$weight / df$height^2
+
+aggregate(income ~ sex, data = df, mean)
+```
+
+-   R intro: https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf
+
+Tidyverse
+
+```{r}
+#| eval: false
+
+# Declarative, non-standard evaluation, very readable, piping as a way of life
+df <- df |> dplyr::filter(age >= 18)
+
+df <- df |> mutate(
+  bmi = weight / height^2
+)
+
+df |> group_by(sex) |> summarise(mean_inc = mean(income))
+```
+
+-   Tidyverse intro: https://cran.r-project.org/web/packages/tidyverse/vignettes/paper.html
+-   Dplyr intro: https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html
+
+Data.table
+
+```{r}
+#| eval: false
+
+# Concise, fast
+DT[age >= 18,,]
+
+DT[, bmi := weight/height^2]
+
+DT[, .(mean_inc = mean(income)), by = sex]
+```
+
+-   DT intro: https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html
+
+### More Tidyverse
+
+-   dplyr
+-   tidyr
+-   lubridate
+-   ggplot2
+-   stringr
+-   forcats
+-   ...
+
+### Dependencies and cross-package workflows
+
+-   Order of loading
+    -   Masking of functions
+-   Feeding one package's output into another; common workflows
+    -   Compatibility
+    -   Classes
+    -   Generic functions and methods
+
+```{r}
+
+```
+
+### Working across languages
+
+STATA to R:
+
+-   Factors as numeric
+    -   Labels
+-   Reading and writing data
+
+### Pre-registration and non-statistical variance
+
+-   Open science and reproducibility
+-   Researcher degrees of freedom
+-   A language for data management
+
+### Matching, weighting and statistical adjustment
+
+WeightIt / WeightThem MatchIt / MatchThem
+
+### Missing data
+
+Assumptions: - MAR/MNAR/MCAR - Changing the missingness mechanism
+
+Methods: - MICE (Multiple imp.) - Pooling: Ruben's rules - FIML (Full-information max. likelihood) - IPMW (Inv. prob. weighting) - CCA (Complete case analysis) - Posterior predictive sampling (And other Bayesian ideas)
+
+### Packages
+
+{gtsummary} {Epi} {Hmisc}
+
+### Quarto / RMD
+
+Using markdown-based tools for - presentations - papers - analyses - dynamic content - R shiny
+
+### Working with database(-like) formats and tools
+
+-   SQL
+-   Parquet
+-   DuckDB
+-   duckplyr/dbplyr
+-   arrow
+
+Why you should want to
+
+When it works
+
+When it doesn't work

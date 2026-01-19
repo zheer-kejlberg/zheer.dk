@@ -1,0 +1,1 @@
+message('Some practical info')

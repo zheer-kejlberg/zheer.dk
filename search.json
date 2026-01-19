@@ -4,7 +4,12 @@
     "href": "cv/cv.html",
     "title": "Curriculum Vitae",
     "section": "",
-    "text": "My full CV below will be updated routinely. If you’re wondering about the strange way of sectioning the CV, it follows from the Danish Health and Medicines Authority’s definition of the seven roles of physicians. These are now commonly how physicians are assessed in our routine evaluations and in job applications. My academic CV tends to be structured differently."
+    "text": "My full CV below will be updated routinely. If you’re wondering about the strange way of sectioning the CV, it follows from the Danish Health and Medicines Authority’s definition of the seven roles of physicians. These are now commonly how physicians are assessed in our routine evaluations and in job applications. My academic CV tends to be structured differently.",
+    "crumbs": [
+      "ZKA",
+      "Cv",
+      "Curriculum Vitae"
+    ]
   },
   {
     "objectID": "cv/publications.html",
@@ -18,7 +23,7 @@
     "href": "index.html",
     "title": "Zheer Kejlberg Al-Mashhadi, MD, PhD",
     "section": "",
-    "text": "Pronunciation*: /ʒɪər/\nLike ‘dear’ but starting with the ⟨zh⟩ sound found in, for instance, ‘measure’.\n\n  \n  Your browser does not support the audio element.\n\n*This is the US English pronunciation; very different from the Danish pronunciation but much closer to the original Kurdish one.\n\nPostdoctorate researcher @ Steno Diabetes Center Aarhus\nInterested in pharmacoepidemiology, causal inference, stats and R\nWorking to improve our understanding of the various roles medication use plays in the lifecourse of type 2 diabetes"
+    "text": "Pronunciation*: /ʒɪər/\nLike ‘dear’ but starting with the ⟨zh⟩ sound found in, for instance, ‘measure’."
   },
   {
     "objectID": "about.html",
@@ -39,14 +44,14 @@
     "href": "about.html#clinical-work",
     "title": "About me",
     "section": "Clinical work",
-    "text": "Clinical work\n\nMy clinical experience spans endocrinology and internal medicine, emergency medicine, general/family medicine, and psychiatry. I am currently employed as a part-time postdoc at SDCA while working 3 days a week in a general practice in Marselisborg, Aarhus, DK."
+    "text": "Clinical work\n My clinical experience spans endocrinology and internal medicine, emergency medicine, general/family medicine, and psychiatry. I am currently employed as a part-time postdoc at SDCA while working 3 days a week in a general practice in Marselisborg, Aarhus, DK."
   },
   {
     "objectID": "about.html#methodological-experience",
     "href": "about.html#methodological-experience",
     "title": "About me",
     "section": "Methodological experience",
-    "text": "Methodological experience\nI have worked with various statistical and causal inference methodologies and have a keen methodological interest. I am always happy to aid in methods discussions where I can.\n\nI have experience with most foundational statistical methods and frameworks and have worked extensively with survival and nonlinear models, missing data, propensity score-based methods, mediation, moderation, RCT design, and more.\nCurrently, I am trying to be more Bayesian by (slowly but surely) working my way through Richard McElreath’s Statistical Rethinking."
+    "text": "Methodological experience\nI have worked with various statistical and causal inference methodologies and have a keen methodological interest. I am always happy to aid in methods discussions where I can.\n I have experience with most foundational statistical methods and frameworks and have worked extensively with survival and nonlinear models, missing data, propensity score-based methods, mediation, moderation, RCT design, and more.\nCurrently, I am trying to be more Bayesian by (slowly but surely) working my way through Richard McElreath’s Statistical Rethinking."
   },
   {
     "objectID": "pipeline.html",
@@ -60,7 +65,7 @@
     "href": "R-packages.html",
     "title": "R packages",
     "section": "",
-    "text": "I have plans to be more reproducible and open sciency. In the coming years, my code will be published as R packages where it may be useful to others.\nCurrently, I have two minor packages out:\n\n\n\n{publistR}:\nan R package to easily create a structured and formatted list of your publications (example here)\n\n\n\n{Z.gtsummary.addons}:\na couple of functions to add to the great {gtsummary} package."
+    "text": "I have plans to be more reproducible and open sciency. In the coming years, my code will be published as R packages where it may be useful to others.\nCurrently, I have two minor packages out:\n\n\n {publistR}:\nan R package to easily create a structured and formatted list of your publications (example here)\n\n\n {Z.gtsummary.addons}:\na couple of functions to add to the great {gtsummary} package."
   },
   {
     "objectID": "pipeline.html#lists-of-studies",
@@ -68,5 +73,73 @@
     "title": "Pipeline",
     "section": "Lists of studies",
     "text": "Lists of studies"
+  },
+  {
+    "objectID": "r-coding-cafe/index.html",
+    "href": "r-coding-cafe/index.html",
+    "title": "General info",
+    "section": "",
+    "text": "Welcome to the Coding Café at the Steno Diabetes Center Aarhus (SDCA).\nWe’re a bi-weekly open “café” for anyone working at SDCA, Aarhus University Hospital, Department of Public Health, Department of Clinical Medicine and Department of Biomedicine, Aarhus University to go and get assistance with coding in R. The only prerequisite so far is that you have had some type of introduction to R, preferably through a course such as this offered by the Danish Diabetes and Endocrinology Academy or similar introductory courses.\nThe sessions are open and anyone can join in and out at anytime during the allotted time. There will be a 10-15 minue presentation at the beginning, tackling a concept in R or specific packages and workflows that are nice to know, and 1-2 experience instructors will subsequently help with specific challenges and questions. We also highly encourage the participants to interact with each other - maybe there is someone in the group that has the solution to your problem.\nThe latest schedule will always be on this website.\n\n\n\n\n\nTable 1: Upcoming dates, times, locations, and lesson subjects for the Café sessions. Note that the schedule can change.\n\n\n\nWeek\nTime\nLocation\nPresenter\nLesson subject\nHelpers\n\n\n\n\nPrevious\n\n\nTue, Jan 13, 2026\n3\n10:00-12:00\nHjørnerummet, A401-109\nZheer\nIntroduction and planning of format\n-\n\n\nPlanned\n\n\nTue, Jan 27, 2026\n5\n10:00-11:30\nHjørnerummet, A401-109\nZheer\nHow to ask for help: The minimal reproducible example and making simulated data\n-\n\n\nTue, Feb 10, 2026\n7\n10:00-11:30\nHjørnerummet, A401-109\nZheer\nPrevention and diagnosis of errors in R\n-\n\n\nTue, Feb 24, 2026\n9\n10:00-11:30\nHjørnerummet, A401-109\nZheer\nTypes of data (object, classes)\n-\n\n\nTue, Mar 10, 2026\n11\n10:00-11:30\nHjørnerummet, A401-109\nZheer\nWriting functions instead of copy/paste\n-\n\n\nTue, Mar 24, 2026\n13\n10:00-11:30\nHjørnerummet, A401-109\nZheer\nLoops, recursion, parallelisation\n-\n\n\nTue, Apr 7, 2026\n15\n10:00-11:30\nHjørnerummet, A401-109\nZheer\nParadigms: Base R vs. Tidyverse vs. data.table\n-\n\n\nTue, Apr 21, 2026\n17\n10:00-11:30\nHjørnerummet, A401-109\nZheer\nMore tidyverse\n-\n\n\nTue, May 5, 2026\n19\n10:00-11:30\nHjørnerummet, A401-109\nZheer\nHandling many packages—and cross-package workflows\n-\n\n\nTue, May 19, 2026\n21\n10:00-11:30\nHjørnerummet, A401-109\nZheer\nMoving between R and Stata\n-\n\n\nTue, Jun 2, 2026\n23\n10:00-11:30\nHjørnerummet, A401-109\nZheer\nMarkdown basics: Using Quarto and Rmarkdown\n-\n\n\nTue, Jun 16, 2026\n25\n10:00-11:30\nHjørnerummet, A401-109\nZheer\nDatabase formats (parquet and more)\n-\n\n\n\n\n\n\n\nOther planned themes are:\n\nNice to know packages (e.g., {gtsummary} {Epi} {Hmisc})\nMatching and Weighting (using MatchIt and WeightIt)\nMissing data: different options and packages for it, including combining MICE with MatchThem/WeightThem\nPreregistration as a means to improved workflows in R",
+    "crumbs": [
+      "R Coding Café"
+    ]
+  },
+  {
+    "objectID": "r-coding-cafe/Plan.html",
+    "href": "r-coding-cafe/Plan.html",
+    "title": "R Coding Café - Plan",
+    "section": "",
+    "text": "library(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\nlibrary(data.table)\n\n\nAttaching package: 'data.table'\n\n\nThe following objects are masked from 'package:dplyr':\n\n    between, first, last\n\nn &lt;- 1000\ndata &lt;- tibble(\n  x = sample(c(\"Treatment A\", \"Treatment B\"), size = n, replace =T),\n  sex = rbinom(n, 1, 0.5) |&gt; factor(labels = c(\"Male\", \"Female\")) |&gt; factor(levels = c(\"Male\", \"Female\")),\n  age = runif(n, 15,87) |&gt; round(),\n  height = rnorm(n, 183 - as.numeric(sex)*5, 10),\n  weight = (rnorm(n,24,2)+age/45+1.5*as.numeric(sex)) * (height/100)^2,\n  bmi = weight/(height/100)^2\n)",
+    "crumbs": [
+      "R Coding Café - Plan"
+    ]
+  },
+  {
+    "objectID": "r-coding-cafe/Plan.html#plan-for-r-coding-café",
+    "href": "r-coding-cafe/Plan.html#plan-for-r-coding-café",
+    "title": "R Coding Café - Plan",
+    "section": "Plan for R coding café",
+    "text": "Plan for R coding café\n\nBi-weekly\n1.5 hours\n10-15 min presentation",
+    "crumbs": [
+      "R Coding Café - Plan"
+    ]
+  },
+  {
+    "objectID": "r-coding-cafe/Plan.html#subjects-for-presentation",
+    "href": "r-coding-cafe/Plan.html#subjects-for-presentation",
+    "title": "R Coding Café - Plan",
+    "section": "Subjects for presentation",
+    "text": "Subjects for presentation\n\nThe minimal reproducible example - and simulation basics\n\nWhat to include\n\n\nMinimal code\nMinimal data\nPrevious attempts\n\n\nWhat not to include\nSimulating the data\n\n\nSampling from a distribution - random deviates in R\nSampling from a set\n\n\n\nData structures\nVariable classes\nSingular: - Numeric: float (double) v. integer - Character - Factor\nMultiple: - Vectors v. lists - Matrices - Tables, data.frames, tibbles v. data.table\nObjects\n\n\nDebugging and sanity checks\nPrinting\nTry\nDebugger moder\nEvaluating output line by line\nSummary functions\n\nis.na(data$age) # The NA cemetery: where half the victims of data management errors go to rest\n\n# General summary functions\nsummary(data$age)\ntable(data$age) # Only for categorical variables\nHmisc::describe(data$age)\n\n# dplyr::summarise()\nlibrary(dplyr)\ndata |&gt; group_by(PNR) |&gt; summarise(n()) # also useful with custom functions\n\n# Make a \"Table 1\" for thorough stratified overviews\ngtsummary::tbl_summary(data, by = sex, include = c(x, age, sex, height, weight, bmi))\n\n\n\nFunctions\n\nmyFunction &lt;- function(input) {\n  output &lt;- input + ...\n  return(output)\n}\n\n\n\nIteration, paralellisation (and recursion?)\nFor and while loops\n\nfor (i in 1:10) {\n  print(i)\n}\n\n[1] 1\n[1] 2\n[1] 3\n[1] 4\n[1] 5\n[1] 6\n[1] 7\n[1] 8\n[1] 9\n[1] 10\n\n# Finite length vector\n\ni &lt;- 2\nwhile (i &lt; 20) {\n  i &lt;- i^2\n  print(i)\n}\n\n[1] 4\n[1] 16\n[1] 256\n\n# BEWARE, here be infinity\n\nFunctional programming\n\n# apply(), sapply(), lapply(), ...\n# purrr::map()\n\nParallel compute\n\n# purrr::in_parallel() [mirai]\n\n# doParallel:\nlibrary(doParallel)\ncl &lt;- makeCluster(2)\nregisterDoParallel(cl)\nforeach(x = 1:10) %dopar% { x^2 }\nstopCluster(cl)\ncloseAllConnections()\n\n\n\nParadigms: Base R, data.table, and Tidyverse (dplyr)\nBase R\n\n# Explicit indexing, standard evaluation, (note logical vectors), wysiwyg\ndf[df$age &gt;= 18, ]\n\ndf$bmi &lt;- df$weight / df$height^2\n\naggregate(income ~ sex, data = df, mean)\n\n\nR intro: https://cran.r-project.org/doc/manuals/r-release/R-intro.pdf\n\nTidyverse\n\n# Declarative, non-standard evaluation, very readable, piping as a way of life\ndf &lt;- df |&gt; dplyr::filter(age &gt;= 18)\n\ndf &lt;- df |&gt; mutate(\n  bmi = weight / height^2\n)\n\ndf |&gt; group_by(sex) |&gt; summarise(mean_inc = mean(income))\n\n\nTidyverse intro: https://cran.r-project.org/web/packages/tidyverse/vignettes/paper.html\nDplyr intro: https://cran.r-project.org/web/packages/dplyr/vignettes/dplyr.html\n\nData.table\n\n# Concise, fast\nDT[age &gt;= 18,,]\n\nDT[, bmi := weight/height^2]\n\nDT[, .(mean_inc = mean(income)), by = sex]\n\n\nDT intro: https://cran.r-project.org/web/packages/data.table/vignettes/datatable-intro.html\n\n\n\nMore Tidyverse\n\ndplyr\ntidyr\nlubridate\nggplot2\nstringr\nforcats\n…\n\n\n\nDependencies and cross-package workflows\n\nOrder of loading\n\nMasking of functions\n\nFeeding one package’s output into another; common workflows\n\nCompatibility\nClasses\nGeneric functions and methods\n\n\n\n\nWorking across languages\nSTATA to R:\n\nFactors as numeric\n\nLabels\n\nReading and writing data\n\n\n\nPre-registration and non-statistical variance\n\nOpen science and reproducibility\nResearcher degrees of freedom\nA language for data management\n\n\n\nMatching, weighting and statistical adjustment\nWeightIt / WeightThem MatchIt / MatchThem\n\n\nMissing data\nAssumptions: - MAR/MNAR/MCAR - Changing the missingness mechanism\nMethods: - MICE (Multiple imp.) - Pooling: Ruben’s rules - FIML (Full-information max. likelihood) - IPMW (Inv. prob. weighting) - CCA (Complete case analysis) - Posterior predictive sampling (And other Bayesian ideas)\n\n\nPackages\n{gtsummary} {Epi} {Hmisc}\n\n\nQuarto / RMD\nUsing markdown-based tools for - presentations - papers - analyses - dynamic content - R shiny\n\n\nWorking with database(-like) formats and tools\n\nSQL\nParquet\nDuckDB\nduckplyr/dbplyr\narrow\n\nWhy you should want to\nWhen it works\nWhen it doesn’t work",
+    "crumbs": [
+      "R Coding Café - Plan"
+    ]
+  },
+  {
+    "objectID": "index.html#this-is-the-us-english-pronunciation-very-different-from-the-danish-pronunciation-but-much-closer-to-the-original-kurdish-one.",
+    "href": "index.html#this-is-the-us-english-pronunciation-very-different-from-the-danish-pronunciation-but-much-closer-to-the-original-kurdish-one.",
+    "title": "Zheer Kejlberg Al-Mashhadi, MD, PhD",
+    "section": "*This is the US English pronunciation; very different from the Danish pronunciation but much closer to the original Kurdish one.",
+    "text": "*This is the US English pronunciation; very different from the Danish pronunciation but much closer to the original Kurdish one.\nPostdoctorate researcher @ Steno Diabetes Center Aarhus\nInterested in pharmacoepidemiology, causal inference, stats and R\nWorking to improve our understanding of the various roles medication use plays in the lifecourse of type 2 diabetes"
+  },
+  {
+    "objectID": "r-coding-cafe/index.html#practical-information",
+    "href": "r-coding-cafe/index.html#practical-information",
+    "title": "R coding café",
+    "section": "Practical information",
+    "text": "Practical information\n\nThings to do before asking for help\nBeing a good coder in R does not necessarily mean that one just sits down and writes a lot of code like writing a piece of text. Even experienced R users search online for code. The great thing about R is that there is often multiple solutions to a coding problem. What often separates an experienced user from a new user is that the experienced user know what to search for, where to search and understand the replies.\nWe suggest that you try to search on either Google or directly in Stackoverflow. As a next step, it can be useful to use AI-tools like ChatGPT-3 but beware that it can make up functions and that it does not always work.\nThese are suggestions to try before asking a question.\n\n\n\nAsking a clear coding question\nSome issues are simple such as I cannot download this package. Other times what you want to do is more complex and needs a bit of background for a person outside your project to understand what you want to do. Therefore, you need to prepare and provide the context to the person you are asking for help. This could be in the form of showing the structure of your dataset, which functions you used, and what you have tried so far.\n\n\n\nNote about sensitive data\nMany of us work with very sensitive data - especially those working in Denmark’s Statistics (DST). If you are working on DST, or something similar where you are not allowed to show the data to anyone else, you need to prepare your question a bit more. We recommend that you find an example dataset that looks similar to the dataset you work with and make a coding example.",
+    "crumbs": [
+      "ZKA",
+      "Timeline"
+    ]
+  },
+  {
+    "objectID": "r-coding-cafe/practical-info.html",
+    "href": "r-coding-cafe/practical-info.html",
+    "title": "Practical information",
+    "section": "",
+    "text": "Things to do before asking for help\nBeing a good coder in R does not necessarily mean that one just sits down and writes a lot of code like writing a piece of text. Even experienced R users search online for code. The great thing about R is that there is often multiple solutions to a coding problem. What often separates an experienced user from a new user is that the experienced user know what to search for, where to search and understand the replies.\nWe suggest that you try to search on either Google or directly in Stackoverflow. As a next step, it can be useful to use AI-tools like ChatGPT-3 but beware that it can make up functions and that it does not always work.\nThese are suggestions to try before asking a question.\n\n\n\nAsking a clear coding question\nSome issues are simple such as I cannot download this package. Other times what you want to do is more complex and needs a bit of background for a person outside your project to understand what you want to do. Therefore, you need to prepare and provide the context to the person you are asking for help. This could be in the form of showing the structure of your dataset, which functions you used, and what you have tried so far.\n\n\n\nNote about sensitive data\nMany of us work with very sensitive data - especially those working in Denmark’s Statistics (DST). If you are working on DST, or something similar where you are not allowed to show the data to anyone else, you need to prepare your question a bit more. We recommend that you find an example dataset that looks similar to the dataset you work with and make a coding example.",
+    "crumbs": [
+      "Practical info"
+    ]
   }
 ]

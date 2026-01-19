@@ -1,0 +1,13 @@
+---
+title: "Notes"
+about:
+  template: jolla
+  image: ../img/rcc_gif2.gif
+css: ../css/rcc.css
+navbar: false
+sidebar: 
+  style: "docked"
+  title: "R coding café"
+  contents: auto
+---
+
