@@ -61,9 +61,3 @@ gt(timeline,
 - Matching and Weighting (using MatchIt and WeightIt)
 - Missing data: different options and packages for it, including combining MICE with MatchThem/WeightThem
 - Preregistration as a means to improved workflows in R
-  
-  
-  \
-  \
-  \
-  
