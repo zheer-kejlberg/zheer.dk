@@ -7,7 +7,7 @@ about:
 
 I am a physician-researcher from Denmark with an interest in (pharmaco)epidemiology and endocrinology.  
 \
-I live in Aarhus with my wife, <a href="https://pure.au.dk/portal/en/persons/sofiekejlberg%40clin.au.dk">Sofie</a>, and our 1-year old son.
+I live in Aarhus with my wife, <a href="https://pure.au.dk/portal/en/persons/sofiekejlberg%40clin.au.dk">Sofie</a>, and our 2-year old son.
 \
 \
 
@@ -20,9 +20,9 @@ PhD within diabetes pharmacoepidemiology from Steno Diabetes Center Aarhus (SDCA
 
 ## Clinical work
 
-{{< iconify healthicons:doctor-male title='clinical' width=30px >}}
+{{< iconify healthicons:doctor-male title='clinical' width=30px >}}  
 My clinical experience spans endocrinology and internal medicine, emergency medicine, general/family medicine, and psychiatry.
-I am currently employed as a part-time postdoc at SDCA while working 3 days a week in a general practice in Marselisborg, Aarhus, DK.
+I am currently employed as a full-time researcher at SDCA.
 \
 \
 
@@ -30,7 +30,7 @@ I am currently employed as a part-time postdoc at SDCA while working 3 days a we
 
 I have worked with various statistical and causal inference methodologies and have a keen methodological interest. I am always happy to aid in methods discussions where I can.
 
-{{< iconify ph:chart-scatter-light title='stats' width=30px >}}
+{{< iconify ph:chart-scatter-light title='stats' width=30px >}}  
 I have experience with most foundational statistical methods and frameworks and have worked extensively with survival and nonlinear models, missing data, propensity score-based methods, mediation, moderation, RCT design, and more.
 
 Currently, I am trying to be more Bayesian by (slowly but surely) working my way through Richard McElreath's <a href="https://xcelab.net/rm/">Statistical Rethinking</a>.

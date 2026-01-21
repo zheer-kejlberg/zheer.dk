@@ -1,1 +1,0 @@
-message('Some practical info')
