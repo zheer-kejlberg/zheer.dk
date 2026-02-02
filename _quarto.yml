@@ -24,6 +24,8 @@ website:
       - href: pipeline.html
         text: Pipeline
     right:
+      - text: "{{< iconify fa6-regular file-code title='R coding café' width=19px >}} <span id='hide-nav-item'>R coding café</span>"
+        href: https://r-coding-cafe.zheer.dk
       - text: "{{< iconify fa6-solid at title='E-mail' width=19px >}} <span id='hide-nav-item'>E-mail</span>"
         href: mailto:contact@zheer.dk
       - text: "{{< iconify fa6-brands square-github title='GitHub' width=19px >}} <span id='hide-nav-item'>GitHub</span>"
