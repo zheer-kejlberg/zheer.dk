@@ -2,12 +2,17 @@ name: Render Site
 
 on:
   push:
-    branches: 
-      - main
+    branches: [main]
+
+permissions:
+  pages: write
+  id-token: write
 
 jobs:
   render:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
 
     env:
       R_LIBS_USER: ~/.local/R/library
@@ -15,8 +20,6 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Set up R
         uses: r-lib/actions/setup-r@v2
@@ -24,7 +27,7 @@ jobs:
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
         with:
-          version: "pre-release"  # or a specific version like "1.4.550"
+          version: "1.8.27"  # or pre-release
 
       - name: Cache R packages
         uses: actions/cache@v4
@@ -32,6 +35,12 @@ jobs:
           path: ${{ env.R_LIBS_USER }}
           key: ${{ runner.os }}-r-${{ hashFiles('**/DESCRIPTION', 'scripts/render-site.R') }}
           restore-keys: ${{ runner.os }}-r-
+
+      - name: Cache Quarto
+        uses: actions/cache@v3
+        with:
+          path: ~/.quarto
+          key: ${{ runner.os }}-quarto-1.8.27
 
       - name: Cache TinyTeX
         uses: actions/cache@v4
@@ -55,8 +64,6 @@ jobs:
             libjpeg-dev
           
       - name: Install R packages
-        env:
-          GITHUB_PAT: ${{ secrets.RENDER_WORKFLOW_PAT }}
         run: |
           Rscript -e 'install.packages(c("devtools", "quarto", "rmarkdown", "knitr", "tibble", "stringr", "rcrossref", "htmltools", "htmlwidgets", "DT","tinytex"))'
           Rscript -e 'if (!requireNamespace("publistR", quietly = TRUE)) devtools::install_github("zheer-kejlberg/publistR")'
@@ -66,3 +73,25 @@ jobs:
 
       - name: Render Quarto site
         run: Rscript scripts/render-site.R
+        
+      - name: Prepare Pages artifact
+        run: |
+          rsync -av \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='*.qmd' \
+            --exclude='*.R' \
+            --exclude='scripts' \
+            --exclude='renv' \
+            --exclude='renv.lock' \
+            --exclude='*.Rproj' \
+            --exclude='*.Rproj.user' \
+            ./ ./pages-artifact/
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: pages-artifact
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4

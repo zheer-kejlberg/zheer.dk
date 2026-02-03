@@ -4,7 +4,7 @@ about:
   template: jolla
 ---
 
-My full CV below will be updated routinely. If you're wondering about the strange way of sectioning the CV, it follows from the Danish Health and Medicines Authority's definition of <a href="https://www.sst.dk/en/news/2013/~/media/39d3e216bcbf4a9096b286ee44f03691.ashx">the seven roles of physicians</a>. These are now commonly how physicians are assessed in our routine evaluations and in job applications. My academic CV tends to be structured differently.
+My full CV below will be updated occasionally. If you're wondering about the strange way of sectioning the CV, it follows from the Danish Health and Medicines Authority's definition of <a href="https://www.sst.dk/en/news/2013/~/media/39d3e216bcbf4a9096b286ee44f03691.ashx">the seven roles of physicians</a>. These are now commonly how physicians are assessed in our routine evaluations and in job applications. My academic CV tends to be structured differently.
 
 ```{=html}
 <object data="cv.pdf" type="application/pdf" width="100%" height="100%" style="min-height:80vh;min-width:70vw;">

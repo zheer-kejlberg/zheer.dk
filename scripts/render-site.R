@@ -19,9 +19,21 @@ cat("Working directory:", getwd(), "\n")
 #setwd("~/GitHub/zheer.dk/cv")
 publistR(
   prepend = c('::: {.content-visible when-format="html"}',
-              "Below you can find all of my scientific publications. 
-              This document was made using the `{publistR}` <a href='https://github.com/zheer-kejlberg/publistR'>R package</a>", 
-              ":::"),
+              'Below you can find all of my scientific publications. 
+              This document was made using the `{publistR}` <a href="https://github.com/zheer-kejlberg/publistR">R package</a>', 
+              ':::',
+              '',
+              '```{r}',
+              '#| echo: false',
+              '',
+              'library(rvest)',
+              'citations <- (read_html("https://scholar.google.com/citations?user=Pr1jGNwAAAAJ&hl=en") |> html_elements(css = "#gsc_rsb_st tbody .gsc_rsb_std") |> html_text())[c(1,3,5)]',
+              '```',
+              '',
+              '### Google Scholar citation metrics',
+              'Total count: `r citations[1]` &nbsp; | &nbsp; h-index: `r citations[2]` &nbsp; | &nbsp; i10-index: `r citations[3]`  ',
+              '',
+              ''),
   author_names = list(
     list(family = "Al-Mashhadi", given = "Z."),
     list(family = "Al-Mashhadi", given = "Z. K.")
@@ -54,7 +66,8 @@ publistR(
   title_italic = T,
   output_filename = "publications",
   output_format = "all",
-  bib_file = "publications.bib"
+  bib_file = "publications.bib",
+  keep_files = F
 )
 
 quarto::quarto_render("cv.qmd", output_format = "html")
