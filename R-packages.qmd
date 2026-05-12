@@ -10,6 +10,13 @@ Currently, I have some minor packages out:
 \
 \
 
+{{< iconify streamline-ultimate-color:presentation-projector-screen-budget-analytics title='publistR' width=30px >}}  
+<a href="https://budget.zheer.dk">{Budget Builder}</a>:   
+an online (Shiny) app to create research budgets for grant applications, with lots of customisation options and room to experiment with scenarios and export the data in different formats and visuals.
+\
+\
+
+
 {{< iconify ph:list-bullets-thin title='publistR' width=30px >}}  
 <a href="https://github.com/zheer-kejlberg/publistR">{publistR}</a>:   
 an R package to easily create a structured and formatted list of your publications (example <a href="https://zheer.dk/cv/publications.html">here</a>)

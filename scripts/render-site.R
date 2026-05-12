@@ -15,6 +15,10 @@ setwd(file.path(Sys.getenv("GITHUB_WORKSPACE", "."), "cv"))
 # Confirm path
 cat("Working directory:", getwd(), "\n")
 
+scholar_profile <- scholar::get_profile("Pr1jGNwAAAAJ")
+total_citations <- scholar_profile$total_cites
+h_index <- scholar_profile$h_index
+i10_index <- scholar_profile$i10_index
 
 #setwd("~/GitHub/zheer.dk/cv")
 publistR(
