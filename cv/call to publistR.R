@@ -1,4 +1,4 @@
-#devtools::install_github("zheer-kejlberg/publistR")
+#pak::pak("zheer-kejlberg/publistR")
 library(publistR)
 #?publistR
 
